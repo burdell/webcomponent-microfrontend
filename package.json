@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-server": "node ./index.js",
-    "build-frontends": "webpack",
-    "watch": "tsc --watch"
+    "start-servers": "node ./servers.js",
+    "start-frontends": "tsc --watch & webpack --watch"
   },
   "keywords": [],
   "author": "",
