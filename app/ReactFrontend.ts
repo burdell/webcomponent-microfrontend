@@ -11,8 +11,7 @@ export function initReactFrontend(registration: Registration) {
       const shadow = this.attachShadow({ mode: "open" });
       const element = document.createElement("div");
 
-      const reactComponent = (window as any)[registration.name];
-      shadow.appendChild(ReactDOM.render(reactComponent(), element));
+      shadow.appendChild(ReactDOM.render(registration.component(), element));
       shadow.appendChild(element);
     }
   }

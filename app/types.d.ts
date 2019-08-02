@@ -1,5 +1,5 @@
 export interface Registration {
   name: string;
-  componentType: "React" | "WebComponent";
+  componentType: "React" | "Vue";
   component: any;
 }

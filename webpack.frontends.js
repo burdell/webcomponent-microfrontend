@@ -3,7 +3,8 @@ const path = require("path");
 module.exports = {
   mode: "development",
   entry: {
-    HelloReact: path.resolve(__dirname, "frontends/HelloReact/register.ts")
+    HelloReact: path.resolve(__dirname, "frontends/HelloReact/register.ts"),
+    HelloVue: path.resolve(__dirname, "frontends/HelloVue/register.ts")
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"]
@@ -22,6 +23,7 @@ module.exports = {
   },
   externals: {
     react: "React",
-    "react-dom": "ReactDOM"
+    "react-dom": "ReactDOM",
+    vue: "Vue"
   }
 };
