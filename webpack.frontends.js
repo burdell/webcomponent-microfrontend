@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   mode: "development",
   entry: {
-    HelloWorld: path.resolve(__dirname, "frontends/HelloWorld/index.ts")
+    HelloReact: path.resolve(__dirname, "frontends/HelloReact/register.ts")
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"]
@@ -12,7 +12,7 @@ module.exports = {
     rules: [
       {
         test: /\.(ts|tsx)?$/,
-        use: "ts-loader",
+        use: "awesome-typescript-loader",
         exclude: /node_modules/
       }
     ]

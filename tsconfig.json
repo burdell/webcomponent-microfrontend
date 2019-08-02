@@ -12,7 +12,8 @@
     "types": ["node"],
     "lib": ["dom"],
     "typeRoots": ["node_modules/@types"],
-    "jsx": "react"
+    "jsx": "react",
+    "outDir": "null"
   },
   "include": ["./app/**/*.ts", "./frontends/**/*.ts"],
   "exclude": ["./app/public/", "./frontends/public"]

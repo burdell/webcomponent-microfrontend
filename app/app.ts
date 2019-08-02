@@ -1,3 +1,3 @@
-import { registerComponents } from "./web-components";
+import { initFrontends } from "./initFrontends";
 
-registerComponents();
+initFrontends();
