@@ -8,6 +8,7 @@ class App extends HTMLElement {
     const element = document.createElement("div");
 
     // shadow.appendChild(ReactDOM.render(HelloReact() as any, element));
+    element.innerText = "yoooo";
     shadow.appendChild(element);
   }
 }

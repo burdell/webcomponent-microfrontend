@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-servers": "node ./servers.js",
-    "start-frontends": "tsc --watch & webpack --watch"
+    "start-frontends": "webpack --config ./webpack.app.js --watch & webpack --config ./webpack.frontends.js --watch"
   },
   "keywords": [],
   "author": "",

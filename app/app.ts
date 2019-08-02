@@ -1,3 +1,3 @@
-import { registerComponents } from "./web-components.js";
+import { registerComponents } from "./web-components";
 
 registerComponents();

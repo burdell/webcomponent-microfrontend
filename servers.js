@@ -14,5 +14,4 @@ frontends.get("/:frontend", function(req, res) {
     path.resolve(`${__dirname}/frontends/public/${req.params.frontend}.js`)
   );
 });
-
 frontends.listen(3030);

@@ -2,9 +2,7 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: {
-    HelloWorld: "./frontends/HelloWorld/index.ts"
-  },
+  entry: path.resolve(__dirname, "app/app.ts"),
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"]
   },
@@ -18,10 +16,7 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, "./frontends/public")
-  },
-  externals: {
-    react: "React",
-    "react-dom": "ReactDOM"
+    path: path.resolve(__dirname, "app/public"),
+    filename: "bundle.js"
   }
 };
